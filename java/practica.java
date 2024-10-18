@@ -3,16 +3,11 @@ import java.util.Scanner;
 class HelloWorld {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
-        int numero;
+        System.out.println("Escribe un numero: ");
+        int numero = keyboard.nextInt();
         
-        do {
-            System.out.println("Escribe un numero");
-            numero = keyboard.nextInt();
-            if(numero <= 0){
-                System.out.println("EL numero es negativo");
-            } else {
-                System.out.println("EL numero es positivo");
-            }
-        } while(numero >= 0);
+        for (int i = 1; i <= numero; i++) {
+            System.out.println(i);
+        }
     }
 }
